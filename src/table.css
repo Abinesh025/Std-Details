@@ -1,0 +1,116 @@
+/* Table Stles */
+    
+.records-cont
+    {
+        text-align: center;
+        position: relative;
+    }
+.tab-cont
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height:50vh ;
+    }
+.tab-cont table
+    {
+        width: 50%;
+    }
+
+.tab-cont table
+    {
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+.tab-cont table thead tr th
+    {
+        background-color: rgb(18, 38, 58);
+        padding: 5px;
+        color: white;
+    }
+.tab-cont table tbody tr td
+    {
+        background-color: rgb(172, 203, 225);
+        padding: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+.tab-cont table tbody tr td a
+    {
+        text-decoration: none;
+    }
+.tab-cont table tbody tr .btns
+    {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+.btn-view
+    {
+        background-color:rgb(22, 69, 156) ;
+        padding: 3px 10px ;
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        text-align: center;
+        box-shadow: 3px 3px 5px black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+.btn-edit
+    {
+        background-color:rgb(22, 69, 156) ;
+        padding: 3px 10px ;
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        text-align: center;
+        box-shadow: 3px 3px 5px black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+.btn-del
+    {
+        background-color:rgb(22, 69, 156) ;
+        padding: 3px 10px ;
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        text-align: center;
+        box-shadow: 3px 3px 5px black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+.tab-cont table tbody tr td a:active
+    {
+        border: 2px solid transparent;
+    }
+.tab-cont table tbody tr td:hover
+    {
+        background-color:rgba(172, 203, 225, 0.542) ;
+    }
+.records-cont h3
+    {
+        
+        border: 2px solid black;
+        border-radius: 10px;
+        position: absolute;
+        top:0px;
+        right:30px;
+        padding:  5px  5px;
+        background-color: rgb(24, 78, 171);
+        color: aliceblue;
+        box-shadow: 2px 2px 2px 2px black;
+        cursor: pointer;
+        transition:all 0.4s ease-in;
+    }
+.records-cont h3:active
+    {
+        border: 2px solid transparent;
+        border-radius: 10px;
+    }
+.img-cont
+    {
+        font-size: 40px;
+    }
+
