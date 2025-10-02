@@ -1,3 +1,10 @@
 {
-  "studentsDetails": []
+  "studentsDetails": [
+    {
+      "id": "1",
+      "name": "Abinesh L",
+      "place": "Muthupettai",
+      "phone": "8899774446"
+    }
+  ]
 }
