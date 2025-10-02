@@ -15,7 +15,7 @@ const EditStudent = () => {
         setName(data.name)
         setPlace(data.place)
         setPhone(data.phone)})
-  },[studentid])
+  }, [studentid])
 
 const handleSubmit = (e)=>{
     e.preventDefault()
