@@ -20,6 +20,7 @@ const EditStudent = () => {
 const handleSubmit = (e)=>{
     e.preventDefault()
     const studentData = {id,name,place,phone}
+    
     fetch("http://localhost:7000/studentsDetails/"+studentid,{
       method:"PUT",
       headers:{
