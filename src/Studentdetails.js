@@ -8,13 +8,13 @@ const Studentdetails = () => {
 
 
     useEffect(()=>{
-            fetch("http://localhost:7000/studentsDetails").then(res=>res.json())
+            fetch("https://jsondata-mcy3.onrender.com/studentsDetails").then(res=>res.json())
                                                           .then(data=>setStudents(data))
                                                           .catch(err=>(err.message))
     },[])
 const deleteDetails = (id)=>{
    
-                fetch("http://localhost:7000/studentsDetails/"+id,{
+                fetch("https://jsondata-mcy3.onrender.com/studentsDetails"+id,{
         method:"Delete"
         
     }).then(res=>window.confirm("Sure your data is deleted"),window.location.reload()).catch(err=>console.log(err.message))

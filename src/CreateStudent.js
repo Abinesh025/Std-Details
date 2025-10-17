@@ -14,7 +14,7 @@ const CreateStudent = () => {
   const handleSubmit = (e)=>{
     e.preventDefault()
     const studentData = {id,name,place,phone}
-    fetch("http://localhost:7000/studentsDetails",{
+    fetch("https://jsondata-mcy3.onrender.com/studentsDetails",{
       method:"POST",
       headers:{
         "content-type":"application/json"

@@ -11,7 +11,7 @@ const EditStudent = () => {
   const [valid,setValid]=useState(false)
 
   useEffect(()=>{
-    fetch("http://localhost:7000/studentsDetails/"+studentid).then(res=>res.json()).then(data=>{setId(data.id)
+    fetch("https://jsondata-mcy3.onrender.com/studentsDetails/"+studentid).then(res=>res.json()).then(data=>{setId(data.id)
         setName(data.name)
         setPlace(data.place)
         setPhone(data.phone)})
@@ -21,7 +21,7 @@ const handleSubmit = (e)=>{
     e.preventDefault()
     const studentData = {id,name,place,phone}
     
-    fetch("http://localhost:7000/studentsDetails/"+studentid,{
+    fetch("https://jsondata-mcy3.onrender.com/studentsDetails/"+studentid,{
       method:"PUT",
       headers:{
         "content-type":"application/json"

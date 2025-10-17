@@ -7,7 +7,7 @@ const ViewStudent = () => {
   const {studentid}=useParams()
   const [viewStudent,setViewStudent]=useState({})
   useEffect(()=>{
-      fetch("http://localhost:7000/studentsDetails/"+studentid).then(res=>res.json()).then(data=>setViewStudent(data)).catch(err=>err.message)
+      fetch("https://jsondata-mcy3.onrender.com/studentsDetails/"+studentid).then(res=>res.json()).then(data=>setViewStudent(data)).catch(err=>err.message)
   }, [studentid])
   return (
       <div className="view-cont">
